@@ -1,0 +1,61 @@
+/* This is a single-line comment */
+
+/*Put different background pictures in different pages*/
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: lightblue;
+}
+
+body {
+  background-image: url("boey.jpg");
+background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+background-size: 1565px 1037.5px;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+ <h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p> 
+
+div {
+  background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+}
+
+pre {
+background: rgba(76, 175, 80, 0.3) 
+}
+
+ /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+div.transbox {
+  margin: 30px;
+ padding: 10px;
+ width: 800px;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
