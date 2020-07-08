@@ -1,13 +1,8 @@
 /* This is a single-line comment */
 
-.serif {
-  font-family: "Times New Roman", Times, serif;
-}
+*{font-family: Verdana;}
 body {
   background-color: grey;
-}
-
-body {
   background-image: url("stick.jpg");
 background-repeat: no-repeat;
   background-position: right top;
