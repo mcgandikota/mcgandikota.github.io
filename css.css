@@ -1,6 +1,8 @@
 /* This is a single-line comment */
 
-*{font-family: Verdana;}
+*{font-family: Verdana;
+  font-size: 20px; 
+}
 body {
   background-color: grey;
   background-image: url("stick.jpg");
