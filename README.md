@@ -1,1 +1,0 @@
-# mcgandikota.github.io
