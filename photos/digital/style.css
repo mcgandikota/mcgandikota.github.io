@@ -1,0 +1,67 @@
+/* This is a single-line comment */
+
+*{font-family: Verdana;
+  font-size: 20px; 
+}
+body {
+  background-color: black;
+background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+background-size: 1399.4px 985.15px;
+}
+
+h1 {
+  color: black;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+tr {
+   opacity: 1
+}
+ <h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p> 
+
+
+div {
+  background: rgba(221, 221, 221, 0.3) /* Green background with 30% opacity */
+}
+
+pre {
+white-space: pre-wrap;
+white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+font-color: rgba(221, 221, 221, 0.3);
+background: rgba(221, 221, 221, 0.3); 
+}
+
+ /* unvisited link */
+a:link {
+  color: navy;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #111E6C;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+div.transbox {
+  margin: 30px;
+ padding: 10px;
+ width: 800px;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
