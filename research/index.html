@@ -13,13 +13,16 @@
 <h1 class="title">Research</h1>
 </header>
 <p style="text-align:center;">
-<a href="../">Home</a> – <a href="../research">Research</a> – <a href="../papers">Papers</a> – <a href="../teaching">Teaching</a> – <a href="../notes">Notes</a> – <a href="../undergraduate">Undergraduate</a> – <a href="https://www.flickr.com/photos/154002170@N02/">Photos</a> – <a href="https://maheshgandikota.wordpress.com/">Blog</a>
+<a href="../">Home</a> – <a href="../research">Research</a> – <a href="../papers">Papers</a> – <a href="../teaching">Teaching</a> – <a href="../notes">Notes</a> – <a href="../undergraduate">Undergraduate</a> – <a href="../photos">Photos</a> – <a href="https://maheshgandikota.wordpress.com/">Blog</a>
 </p>
 <p><img src="./museum.jpg" /></p>
 <p>Towards explaining experimental observations, I use a mix of numerical simulations/solvers and analytical models arguments to corroborate the same. While the former is indispensible when enquiring into the more involved behaviours of the model, the latter proves usful in studying the simplest possible cases of the model. Such an analytic study may provide simple mechanisms at work which could possibly be the leading contribution to the experimental observations. A match between the numerics and analytics for the simplest case which can be solved by the latter provides confidence in the implementation of numerical solvers.</p>
 <!--I have studied the contraction of the tail-sheath of the T4 bacteriophage virus with a mapping to a spin system and performed numerical invesigations using Monte Carlo tecniques. -->
 <ol type="1">
-<li>Compression of a single animal cell and a fibrin network with embedded beads leads to a non-linear elastic response. This non-linearity is the <i>compression stiffening</i> phenomenon where the stress-strain response exceeds linear response of a simple Hookean spring. We constructed discrete two dimensional network models to explain the response of these systems. The findings of this line of effort is reported in this <a href="https://arxiv.org/abs/1908.03725">paper</a>.<br><br> Energy minimization is achieved for the loop/network models via numerical solvers. Analytical corroboration is provided by investigating a rhombus/elliptical loop and writing exact energy expressions for the affine response of the fully occupied lattice network.</li>
+<li><h3>
+Compression stiffening in semiflexible networks
+</h3>
+Compression of a single animal cell and a fibrin network with embedded beads leads to a non-linear elastic response. This non-linearity is the <i>compression stiffening</i> phenomenon where the stress-strain response exceeds linear response of a simple Hookean spring. We constructed discrete two dimensional network models to explain the response of these systems. The findings of this line of effort is reported in this <a href="https://arxiv.org/abs/1908.03725">paper</a>.<br><br> Energy minimization is achieved for the loop/network models via numerical solvers. Analytical corroboration is provided by investigating a rhombus/elliptical loop and writing exact energy expressions for the affine response of the fully occupied lattice network.</li>
 </ol>
 <!--![](./o+fn_with_loops.mp4)
 
@@ -29,14 +32,17 @@
 
 -->
 <ol start="2" type="1">
-<li>The folds in the cerebellum are different from the folds in the cerebrum in two ways. Unlike the cerebrum, the cerebellum has an approximate cylindrical geometry which allows for two dimensional modeling. Secondly, the folds in the cerebellum are scale-invariant i.e. even the small cerebellums like that of mice have folds just like the bigger cerebellums like that of pigs do. In a developing cerebellum, the cortex is seen to be the thickest at the troughs and thinnest at the crests. Recently the <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.041053">’buckling without bending</a> or <a href="https://elifesciences.org/articles/45019">‘multi-phase’</a> model was introduced to explain these observations. In an extension of the work we studied the non-linearities of this model in terms of having non-linear radial glial springs, steric effects due to confinement and the problem of hierarchy. We could reproduce certain features of cerebellar growth at later stages such as cusped troughs, squashed crests and hierarchial folding. <br><br> An oscillator called the `Asymmetric dampening oscillator’ was studied which involves a <span class="math inline">\(E = mc^2\,.\)</span> <span class="math display">\[
-\begin{align*}
-  \nabla\cdot\mathbf{E} &amp;= \frac{\rho}{\epsilon_0}\\
-  \nabla\cdot\mathbf{B} &amp;= 0\\
-  \nabla\times\mathbf{E} &amp;= -\frac{\partial\mathbf{B}}{\partial{t}}\\
-  \nabla\times\mathbf{B} &amp;= \mu_0\mathbf{J} + \epsilon_0\mu_0\frac{\partial\mathbf{E}}{\partial{t}}
-\end{align*}
-\]</span></li>
+<li><h3>
+Folding mechanism in cerebellum
+</h3>
+<p>The folds in the cerebellum are different from the folds in the cerebrum in two ways. Unlike the cerebrum, the cerebellum has an approximate cylindrical geometry which allows for two dimensional modeling. Secondly, the folds in the cerebellum are scale-invariant i.e. even the small cerebellums like that of mice have folds just like the bigger cerebellums like that of pigs do. In a developing cerebellum, the cortex is seen to be the thickest at the troughs and thinnest at the crests. Recently the <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.041053">’buckling without bending</a> or <a href="https://elifesciences.org/articles/45019">‘multi-phase’</a> model was introduced to explain these observations. In an extension of the work we studied the non-linearities of this model in terms of having non-linear radial glial springs, steric effects due to confinement and the problem of hierarchy. We could reproduce certain features of cerebellar growth at later stages such as cusped troughs, squashed crests and hierarchial folding. <br><br> The coupling between the Euler-Lagrange equations of the two degrees of freedom in the problem introduces a robust quadratic non-linearity of the form <span class="math inline">\(\left(\frac{dr}{d\theta}\right)^2\)</span>. To isolate the effect of such a non-linearity in generating cusped sharp troughs, we studied an oscillator called the `Asymmetric dampening oscillator’ which is a simple harmonic oscillator with a forcing term of <span class="math inline">\(\left(\frac{dx}{d\theta}\right)^2\)</span>. We see sharp cusps even in this simple oscillator.</p></li>
+<li><h3>
+Convexity induced rigidity transitions in spring networks
+</h3></li>
+<li><h3>
+Null model for mouse brain network
+</h3>
+<p>Using the principles of statistical mechanics, we can produce <a href="https://arxiv.org/pdf/cond-mat/0405566.pdf">maximally unbiased ensemble of networks</a> which obey the constraints imposed by the real world networks. Such models prove useful in constructing null models with which the real world networks can be compared against. From the data of Allen brain atlas for mice, we use the number of neighbors for nodes as the constraints of the real world network and produce a maximally unbiased ensemble of networks which obey these constraints on an average. This formalism is exactly equivalent to the canonical ensemble formalism of statistical mechanics. Canonical ensemble only provides a soft constraint for the ensemble and makes the system analytically tractable in comparison to microcanonical ensemble where constraints have to be adhered to strictly as a hard constraint.</p></li>
 </ol>
 </body>
 </html>
