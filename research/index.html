@@ -6,22 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Research</title>
   <link rel="stylesheet" href="/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Research</h1>
 </header>
 <p style="text-align:center;">
-<a href="../">Home</a> – <a href="../research">Research</a> – <a href="../papers">Papers</a> – <a href="../teaching">Teaching</a> – <a href="../notes">Notes</a> <br> <a href="../courses">Courses</a> – <a href="../undergraduate">Undergraduate</a> – <a href="../photos">Photos</a> – <a href="https://maheshgandikota.wordpress.com/">Blog</a>
+<a href="../">Home</a> – <a href="../research">Research</a> – <a
+href="../papers">Papers</a> – <a href="../teaching">Teaching</a> – <a
+href="../notes">Notes</a> <br> <a href="../courses">Courses</a> – <a
+href="../undergraduate">Undergraduate</a> – <a
+href="../photos">Photos</a> – <a
+href="https://maheshgandikota.wordpress.com/">Blog</a>
 </p>
 <p><img src="./000314960009.jpg" /></p>
-<p>Towards explaining experimental observations, I use a mix of numerical simulations/solvers and analytical models arguments to corroborate the same. While the former is indispensible when enquiring into the more realistic versions of the model, the latter proves useful in studying the simplest version of the model. Such an analytical study may provide simple mechanisms at work which could possibly be the leading contribution to the experimental observations. A match between the numerics and analytics for the simplest case which can be solved by the latter provides confidence in the implementation of numerical solvers.</p>
+<p>My current research is in the study of statistical mechanics of a
+class of nonequilibrium systems termed as <em>active matter</em>. The
+principal motivation of the field was to understand biological systems
+which are inherently out of equilibrium. Systems that are out of
+equilibrium display behaviour such as flocking in birds and clustering
+of bacteria. Such steady states are forbidden in equilibrium matter
+since they would disobey the second law of thermodynamics.
+Synthetically, microscopic active colloids (Janus particles) can be
+constructed which are <em>self-propelled</em> due to chemical reactions
+with the medium around it. The broad question to be answered is - how
+can complex emergent phenomenon arise from simple self-propulsion at the
+particle level, be it birds, bacteria or Janus particles. I study
+<em>dry</em> active matter i.e. I do not explicitly account for the
+action of hydrodynamics. If you are interested, do look at my <a
+href="../papers">publications</a> and references within.</p>
+<p><br> In my doctoral studies, towards explaining experimental
+observations, I used a mix of numerical simulations/solvers and
+analytical models arguments to corroborate the same. While the former is
+indispensible when enquiring into the more realistic versions of the
+model, the latter proves useful in studying the simplest version of the
+model. Such an analytical study may provide simple mechanisms at work
+which could possibly be the leading contribution to the experimental
+observations. A match between the numerics and analytics for the
+simplest case which can be solved by the latter provides confidence in
+the implementation of numerical solvers.</p>
 <ol type="1">
 <li><h3>
 Compression stiffening in semiflexible networks
 </h3>
-Compression of a single animal cell and a fibrin network with embedded beads leads to a non-linear elastic response. This non-linearity is the <i>compression stiffening</i> phenomenon where the stress-strain response exceeds linear response of a simple Hookean spring. We constructed discrete two dimensional network models to explain the response of these systems. Area conserving inclusions embedded in a semiflexible network are seen to excite bending modes in the network which bring about compression stiffening. <a href="https://arxiv.org/abs/1908.03725.pdf">Paper here</a>.<br><br> Energy minimization is achieved for the loop/network models via numerical solvers. Analytical corroboration is provided by investigating a rhombus/elliptical loop and writing exact energy expressions for the affine response of the fully occupied lattice network.</li>
+Compression of a single animal cell and a fibrin network with embedded
+beads leads to a non-linear elastic response. This non-linearity is the
+<i>compression stiffening</i> phenomenon where the stress-strain
+response exceeds linear response of a simple Hookean spring. We
+constructed discrete two dimensional network models to explain the
+response of these systems. Area conserving inclusions embedded in a
+semiflexible network are seen to excite bending modes in the network
+which bring about compression stiffening. <a
+href="https://arxiv.org/abs/1908.03725.pdf">Paper here</a>.<br><br>
+Energy minimization is achieved for the loop/network models via
+numerical solvers. Analytical corroboration is provided by investigating
+a rhombus/elliptical loop and writing exact energy expressions for the
+affine response of the fully occupied lattice network.</li>
 </ol>
 <!--![](./o+fn_with_loops.mp4)
 
@@ -34,15 +77,66 @@ Compression of a single animal cell and a fibrin network with embedded beads lea
 <li><h3>
 <p>Folding mechanism in cerebellum</p>
 </h3>
-<p>The folds in the cerebellum are different from the folds in the cerebrum in two ways. Unlike the cerebrum, the cerebellum has an approximate cylindrical geometry which allows for two dimensional modeling. Secondly, the folds in the cerebellum are scale-invariant i.e. even the small cerebellums of mice have folds just like the bigger cerebellums of pigs. In a developing cerebellum, the cortex is seen to be the thickest at the troughs and thinnest at the crests. Purely elastic models cannot explain such an observation in the developing cerebellum. Recently the <a href="https://journals.aps.org/prx/pdf/10.1103/PhysRevX.8.041053">’buckling without bending</a> model was introduced to explain the same. In an <a href="https://arxiv.org/pdf/2102.08576.pdf">extension of the work</a> we studied the non-linearities of this model in terms of having non-linear radial glial springs, steric effects due to confinement and the problem of hierarchy. We could reproduce certain features of cerebellar growth at later stages such as cusped troughs, squashed crests and hierarchical folding. <br><br> The coupling between the Euler-Lagrange equations of the two degrees of freedom in the problem introduces a robust quadratic non-linearity of the form <span class="math inline">\(\left(\frac{dx}{d\theta}\right)^2\)</span>. To isolate the effect of such a non-linearity in generating cusped sharp troughs, we studied an unphysical oscillator called the `assisting-dampening oscillator’ which is a simple harmonic oscillator with a forcing term of <span class="math inline">\(\left(\frac{dx}{d\theta}\right)^2\)</span>. We see sharp cusps even in this simple oscillator.</p></li>
+<p>The folds in the cerebellum are different from the folds in the
+cerebrum in two ways. Unlike the cerebrum, the cerebellum has an
+approximate cylindrical geometry which allows for two dimensional
+modeling. Secondly, the folds in the cerebellum are scale-invariant
+i.e. even the small cerebellums of mice have folds just like the bigger
+cerebellums of pigs. In a developing cerebellum, the cortex is seen to
+be the thickest at the troughs and thinnest at the crests. Purely
+elastic models cannot explain such an observation in the developing
+cerebellum. Recently the <a
+href="https://journals.aps.org/prx/pdf/10.1103/PhysRevX.8.041053">’buckling
+without bending</a> model was introduced to explain the same. In an <a
+href="https://arxiv.org/pdf/2102.08576.pdf">extension of the work</a> we
+studied the non-linearities of this model in terms of having non-linear
+radial glial springs, steric effects due to confinement and the problem
+of hierarchy. We could reproduce certain features of cerebellar growth
+at later stages such as cusped troughs, squashed crests and hierarchical
+folding. <br><br> The coupling between the Euler-Lagrange equations of
+the two degrees of freedom in the problem introduces a robust quadratic
+non-linearity of the form <span
+class="math inline">\(\left(\frac{dx}{d\theta}\right)^2\)</span>. To
+isolate the effect of such a non-linearity in generating cusped sharp
+troughs, we studied an unphysical oscillator called the
+`assisting-dampening oscillator’ which is a simple harmonic oscillator
+with a forcing term of <span
+class="math inline">\(\left(\frac{dx}{d\theta}\right)^2\)</span>. We see
+sharp cusps even in this simple oscillator.</p></li>
 <li><h3>
 <p>Convexity induced rigidity transitions in spring networks</p>
 </h3>
-<p>With sufficient number of constraints/springs in a spring network, we can rigidify the network. By increasing the number of such constraints, we can remove the degrees of freedom of the network in its configuration space. When all the degrees of freedom are removed, the network is said to be rigid. <br><br> In other words, a floppy mode is a non-trivial deformation that doesn’t cost the network any energy. When a network has no floppy modes, it is said to be rigid. Using the rank-nullity theorem from linear algebra, we can study the compatibility/rigidity matrix of the network which encodes the geometry of the network. We can then find the presence/absence of floppy modes and thus know whether the network is floppy/rigid. <br><br> Even with insufficient springs, we can bring rigidity to the network by imposing an external strain. For example, a 1D chain of springs is floppy. But, upon uniaxial tension, it rigidifies. This is called a strain induced rigidity transition. We are currently studying spring networks under isotropic expansion strain and investigating the role convexity has in inducing a rigidity transition.</p></li>
+<p>With sufficient number of constraints/springs in a spring network, we
+can rigidify the network. By increasing the number of such constraints,
+we can remove the degrees of freedom of the network in its configuration
+space. When all the degrees of freedom are removed, the network is said
+to be rigid. <br><br> In other words, a floppy mode is a non-trivial
+deformation that doesn’t cost the network any energy. When a network has
+no floppy modes, it is said to be rigid. Using the rank-nullity theorem
+from linear algebra, we can study the compatibility/rigidity matrix of
+the network which encodes the geometry of the network. We can then find
+the presence/absence of floppy modes and thus know whether the network
+is floppy/rigid. <br><br> Even with insufficient springs, we can bring
+rigidity to the network by imposing an external strain. For example, a
+1D chain of springs is floppy. But, upon uniaxial tension, it
+rigidifies. This is called a strain induced rigidity transition. We are
+currently studying spring networks under isotropic expansion strain and
+investigating the role convexity has in inducing a rigidity
+transition.</p></li>
 <li><h3>
 <p>Null model for mouse neural network</p>
 </h3>
-<p>Using the principles of statistical mechanics, we can produce <a href="https://arxiv.org/pdf/cond-mat/0405566.pdf">maximally unbiased ensemble of networks</a> which obey the constraints imposed by the real world networks. Such models prove useful in constructing null models with which the real world networks can be compared against. With the data of Allen brain atlas for mice, we use the number of neighbors for nodes as the constraints of the real world network and produce a maximally unbiased ensemble of networks which obey these constraints on an average. This formalism is exactly equivalent to the canonical ensemble formalism of statistical mechanics and is analytically tractable to an extent.</p></li>
+<p>Using the principles of statistical mechanics, we can produce <a
+href="https://arxiv.org/pdf/cond-mat/0405566.pdf">maximally unbiased
+ensemble of networks</a> which obey the constraints imposed by the real
+world networks. Such models prove useful in constructing null models
+with which the real world networks can be compared against. With the
+data of Allen brain atlas for mice, we use the number of neighbors for
+nodes as the constraints of the real world network and produce a
+maximally unbiased ensemble of networks which obey these constraints on
+an average. This formalism is exactly equivalent to the canonical
+ensemble formalism of statistical mechanics and is analytically
+tractable to an extent.</p></li>
 </ol>
 </body>
 </html>
